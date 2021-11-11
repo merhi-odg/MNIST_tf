@@ -5,7 +5,7 @@ import tensorflow as tf
 import numpy as np
 
 
-# modelop.init()
+# modelop.init
 def begin():
     global model
     # Loading model from trained artifact    
