@@ -12,8 +12,10 @@
         },
         {
             "name": "predicted_probs",
-            "type": "array",
-            "items": "float"
+            "type": {
+                "type": "array",
+                "items": "float"
+            }
         },
         {
             "name": "score",
