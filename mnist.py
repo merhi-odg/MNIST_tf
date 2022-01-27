@@ -16,7 +16,7 @@ def begin():
 def action(datum):
     
     # Compute 10 probabilities, 1 for each possible digit
-    predicted_probs = model.predict(np.array([datum["array"]])).tolist()
+    predicted_probs = model.predict(np.array([datum["array"]])).tolist()[0]
     
     # Add these probabilities to the output
     datum["predicted_probs"] = predicted_probs
