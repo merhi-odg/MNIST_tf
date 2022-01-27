@@ -8,8 +8,13 @@
         },
         {
             "name": "array",
-            "type": "array",
-            "items": "array"
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "array",
+                    "items": "float"
+                }
+            }
         },
         {
             "name": "label",
