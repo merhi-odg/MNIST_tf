@@ -14,9 +14,7 @@ A sample model to demonstrate **tensorflow** in ModelOp Center. The saved model 
 
 ### Sample Inputs
 
-Choose **one** of
- - `train.json`
- - `test.json`
+Choose `data/sample_input.json` as the input file. The scoring job requires a runtime with **python >= 3.8**.
 
 ### Schema Checking
 
