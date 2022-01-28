@@ -4,7 +4,13 @@
     "fields": [
         {
             "name": "id",
-            "type": "int"
+            "type": "int",
+            "dataClass": "numerical",
+            "role": "identifier",
+            "protectedClass": false,
+            "driftCandidate": false,
+            "specialValues": [],
+            "scoringOptional": false
         },
         {
             "name": "array",
@@ -14,11 +20,33 @@
                     "type": "array",
                     "items": "float"
                 }
-            }
+            },
+            "dataClass": "numerical",
+            "role": "predictor",
+            "protectedClass": false,
+            "driftCandidate": false,
+            "specialValues": [],
+            "scoringOptional": false
         },
         {
             "name": "label",
-            "type": "int"
+            "type": "int",
+            "dataClass": "numerical",
+            "role": "label",
+            "protectedClass": false,
+            "driftCandidate": true,
+            "specialValues": [],
+            "scoringOptional": false
+        },
+        {
+            "name": "score",
+            "type": "int",
+            "dataClass": "numerical",
+            "role": "score",
+            "protectedClass": false,
+            "driftCandidate": true,
+            "specialValues": [],
+            "scoringOptional": true
         }
     ]
 }
